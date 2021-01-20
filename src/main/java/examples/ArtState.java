@@ -9,13 +9,18 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+// Cordaのソースコードを書くためのサンプルコード
 // Like all states, implements `ContractState`.
 @BelongsToContract(ArtContract.class)
 public class ArtState implements ContractState {
     // The attributes that will be stored on the ledger as part of the state.
+    // 著者
     private final String artist;
+    // タイトル
     private final String title;
+    // 鑑定者
     private final Party appraiser;
+    // 所有者
     private final Party owner;
 
     // The constructor used to create an instance of the state.
