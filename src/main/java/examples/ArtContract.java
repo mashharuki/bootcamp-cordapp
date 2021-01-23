@@ -8,6 +8,7 @@ import java.util.List;
 
 import static net.corda.core.contracts.ContractsDSL.requireSingleCommand;
 
+// スマートコントラクトのサンプルコード
 // Like all contracts, implements `Contract`.
 public class ArtContract implements Contract {
     // Used to reference the contract in transactions.

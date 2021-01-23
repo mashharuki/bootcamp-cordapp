@@ -14,7 +14,8 @@ import java.util.List;
 
 /* Our state, defining a shared fact on the ledger.
  * See src/main/java/examples/ArtState.java for an example. */
-//@BelongsToContract(TokenContract.class)
+//トークンが持つべき箱情報を定意義したJavaクラス
+@BelongsToContract(bootcamp.TokenContract.class)
 public class TokenState implements ContractState {
     // トークンの発行者
     private final Party issuer;
