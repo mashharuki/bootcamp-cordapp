@@ -4,6 +4,9 @@ import co.paralleluniverse.fibers.Suspendable;
 import net.corda.core.flows.*;
 import net.corda.core.transactions.SignedTransaction;
 
+/**
+ * トランザクションを提案された側の処理を記述したJavaクラス
+ */
 @InitiatedBy(TokenIssueFlowInitiator.class)
 public class TokenIssueFlowResponder extends FlowLogic<Void> {
 
